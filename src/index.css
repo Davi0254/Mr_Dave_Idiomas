@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Roboto';
+  src: url('/assets/Roboto-VariableFont_wdth\,wght.ttf');
+}         

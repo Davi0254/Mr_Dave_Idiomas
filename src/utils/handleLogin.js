@@ -1,0 +1,46 @@
+const handleLogin = async (
+    e,
+    { loginForm, setLoginForm, login, setError, setMessage }
+) => {
+    e.preventDefault();
+
+    const { email, senha } = loginForm || {};
+
+    if (!email?.trim() || !senha?.trim()) {
+        setError("todos os campos são necessários");
+        return;
+    }
+
+    try {
+        const response = await fetch("http://localhost:3000/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email,
+                senha
+            }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            const newLoginForm = {
+                email: data.email,
+                senha: data.senha,
+            }
+            setLoginForm((prev) => ({ ...prev, ...newLoginForm, }));
+            setMessage(data.message)
+            login(data.token);
+
+        } else {
+            setError(data.error || "Falha no login");
+        }
+    } catch (error) {
+        console.error("Erro no login:", error);
+        setError("Erro no login do aluno");
+    }
+};
+
+export default handleLogin;             

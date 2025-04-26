@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: '*',
+    origin: 'https://mrdaveplataforma-production.up.railway.app',
     credentials: true
 }));
 

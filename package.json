@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "npx vite build",
-    "start": "node inicio.js",
+    "start": "node src/servidor/inicio.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },

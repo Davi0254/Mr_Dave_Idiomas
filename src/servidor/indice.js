@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: 'https://mrdave.netlify.app/',
+    origin: 'https://mrdave.netlify.app',
     credentials: true
 }));
 

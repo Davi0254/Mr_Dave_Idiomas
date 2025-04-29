@@ -9,7 +9,7 @@ const handleRegister = async (e, {registerForm, setRegisterForm, setError, setMe
     }
 
     try {
-        const response = await fetch("https://mrdaveplataforma-production.up.railway.app/register", {
+        const response = await fetch("https://mr-dave-plataforma.onrender.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: 'https://mrdaveplataforma-production.up.railway.app',
+    origin: 'https://mr-dave-plataforma.onrender.com',
     credentials: true
 }));
 

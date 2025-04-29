@@ -5,35 +5,6 @@ import pool from "../config.js";
 import { errorHandler } from "../errorHandler.js";
 import jwt from 'jsonwebtoken';
 
-// export const login = async (req, res) => {
-//     try {
-//         const { email, senha } = req.body;
-
-//         const [result] = await pool.query(
-//             'SELECT email, senha_hash FROM alunos WHERE email = ?',
-//             [email]);
-
-//         if (!result || result.length === 0) {
-//             return res.status(400).json({ error: 'Usuario não encontrado' });
-//         }
-
-//         const senha_hash = result.senha_hash;
-
-//         const isMatch = await bcrypt.compare(senha, senha_hash);
-
-//         if (!isMatch) {
-//             return res.status(400).json({ error: 'Senha incorreta' });
-//         }
-
-//         const token = jwt.sign({ email }, process.env.JWT_SECRET, { expiresIn: '2h' })
-//         return res.status(200).json({ message: 'Sucesso no login', email, token });
-
-//     } catch (error) {
-//         errorHandler(error, res)
-//     }
-// }
-
-
 export const login = async (req, res) => {
     try {
         const { email, senha } = req.body;

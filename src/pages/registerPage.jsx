@@ -45,7 +45,6 @@ export default function RegisterPage() {
             autoComplete="off"
             onSubmit={(e) => {
                 handleRegister(e, { registerForm, setRegisterForm, setError, setMessage })
-                handleRedirect();
             }}
         >
             <div className='flex flex-col items-center justify-center h-screen gap-4'>

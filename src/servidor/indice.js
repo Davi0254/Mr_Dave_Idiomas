@@ -7,7 +7,7 @@ import userRoutes from './rotas.js';
 const app = express();
 
 const allowedOrigins = [
-    'mrdave-idiomas.netlify.app',
+    'https://mrdave-idiomas.netlify.app',
     'http://localhost:5173'
 ];
 

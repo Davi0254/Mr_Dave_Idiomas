@@ -9,7 +9,7 @@ const handleRegister = async (e, {registerForm, setRegisterForm, setError, setMe
     }
 
     try {
-        const response = await fetch("https://mrdave-idiomas.netlify.app/register", {
+        const response = await fetch("https://mr-dave-plataforma.onrender.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const handleRegister = async (e, {registerForm, setRegisterForm, setError, setMe
         }
     } catch (error) {
         console.error("Error ao registrar usuário:", error);
-        setError("Erro ao registrar aluno");
+        setError("Erro ao registrar usuário");
     }
 };
 

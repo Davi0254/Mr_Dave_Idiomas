@@ -12,7 +12,7 @@ const handleLogin = async (
     }
 
     try {
-        const response = await fetch("https://mrdave-idiomas.netlify.app/login", {
+        const response = await fetch("https://mr-dave-plataforma.onrender.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const handleLogin = async (
         }
     } catch (error) {
         console.error("Erro no login:", error);
-        setError("Erro no login do aluno");
+        setError("Erro no login");
     }
 };
 

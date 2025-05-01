@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import Header from "../../../components/Header";
 
 const Lições = () => {
-   const { id } = useParams();
+  const { id } = useParams();
 
    const lições = [
       { id: 1, titulo: 'Lição 1' },
@@ -19,7 +19,7 @@ const Lições = () => {
          <div className="flex flex-col items-center mt-10">
             <img src="/assets/1._Logo_Aquí_Tu_Hablas-removebg-preview.png" alt="USpeaK" width="70" height="70"></img>
             <h1 className="text-center mt-10 text-2xl font-bold">
-               Lições modulo {id}
+               Módulo {id}
             </h1>
          </div>
          <ul className="flex flex-col mt-10 gap-5 justify-center items-center">

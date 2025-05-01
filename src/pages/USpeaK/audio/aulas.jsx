@@ -18,7 +18,7 @@ const AulasAudios = () => {
             <Header />
             <div className="flex flex-col items-center mt-10">
                 <img src="/assets/Logo_USpeaK-removebg-preview.png" alt="USpeaK" width="70" height="70"></img>
-                <h1 className="text-center mt-10 text-2xl font-bold">Audios Lição {id}</h1>
+                <h1 className="text-center mt-10 text-2xl font-bold">Lição {id}</h1>
             </div>
             <ul className="flex flex-col mt-10 gap-5 justify-center items-center">
                 {aulas.map((aula) => (

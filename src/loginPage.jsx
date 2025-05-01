@@ -69,7 +69,7 @@ export default function LoginPage() {
                         />
                         <img
                             className='cursor-pointer'
-                            src='../../assets/eye-password-show-svgrepo-com.svg'
+                            src='/assets/eye-password-show-svgrepo-com.svg'
                             alt='show-password'
                             width={18}
                             onClick={togglePassword}

@@ -1,5 +1,5 @@
 import bcrypt from "bcryptjs";
-import pool from "../config.js";
+import pool from "../db.js";
 import { errorHandler } from "../errorHandler.js";
 
 export const register = async (req, res) => {

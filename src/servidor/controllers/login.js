@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 import bcrypt from "bcryptjs";
-import pool from "../config.js";
+import pool from "../db.js";
 import { errorHandler } from "../errorHandler.js";
 import jwt from 'jsonwebtoken';
 

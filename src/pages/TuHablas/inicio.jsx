@@ -6,14 +6,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import BackgroundEspanhol from '/assets/plano_de_fundo/apostila-espanhol.png';
-import BackgroundAudio from "/assets/plano_de_fundo/audio-espanhol.png";
+import BackgroundAudio from "/assets/plano_de_fundo/audios-espanhol.png";
 
 const TuHablasPágina = () => {
     return (
         <>
             <Header />
             <div className="flex flex-col items-center mt-10">
-                <img src="/assets/plano_de_fundo/capa-espanhol.png" alt="Mr. Dave Logo" width="400" height="200"></img>
+                <img src="/assets/plano_de_fundo/capa-espanhol.png" alt="capa-espanhol" width="400" height="200"></img>
                 <div className="flex flex-col justify-center items-center mt-15 gap-10 sm:flex-row cursor-pointer">
                     <Link to={'modulos'}>
                         <Card sx={{ width: 345 }}>
@@ -27,13 +27,13 @@ const TuHablasPágina = () => {
                                     Material de estudo
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    Acesse o material de estudo das aulas do curso
+                                    Acesse o material de estudo
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Link>
 
-                    <Link to={'audios'}>
+                    <Link to={''}>
                         <Card sx={{ width: 345 }}>
                             <CardMedia
                                 sx={{ height: 140 }}
@@ -45,7 +45,7 @@ const TuHablasPágina = () => {
                                     Áudios das aulas
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    Ouça os áudios das aulas do curso
+                                    Ouça os áudios
                                 </Typography>
                             </CardContent>
                         </Card>

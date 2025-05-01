@@ -6,14 +6,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import BackgroundIngles from '/assets/plano_de_fundo/apostila-ingles.png';
-import BackgroungAudio from "/assets/plano_de_fundo/audio-ingles.png";
+import BackgroungAudio from "/assets/plano_de_fundo/audios-ingles.png";
 
 const USpeaKPágina = () => {
     return (
         <>
            <Header />
             <div className="flex flex-col items-center mt-10">
-            <img src="/assets/plano_de_fundo/capa-ingles.png" alt="Mr. Dave Logo" width="400" height="200"></img>
+            <img src="/assets/plano_de_fundo/capa-ingles.png" alt="capa-ingles" width="400" height="200"></img>
                 <div className="flex flex-col justify-center items-center mt-15 gap-10 sm:flex-row cursor-pointer">
                     <Link to={'modulos'}>
                         <Card sx={{ width: 345 }}>

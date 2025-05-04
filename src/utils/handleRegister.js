@@ -9,7 +9,7 @@ const handleRegister = async (e, {registerForm, setRegisterForm, setError, setMe
     }
 
     try {
-        const response = await fetch("http://localhost:3000/register", {
+        const response = await fetch("https://mr-dave-plataforma.onrender.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

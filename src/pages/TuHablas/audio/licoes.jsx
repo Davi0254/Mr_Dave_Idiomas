@@ -17,7 +17,7 @@ const LiçõesAudios = () => {
       <>
          <Header />
          <div className="flex flex-col items-center mt-10">
-            <img src="/assets/Logo_USpeaK-removebg-preview.png" alt="USpeaK" width="70" height="70" />
+            <img src="/assets/Logo_USpeaK-removebg-preview.png" alt="USpeaK" width="85" height="85" />
             <h1 className="text-center mt-10 text-2xl font-bold">
                Módulo {id}
             </h1>

@@ -27,7 +27,7 @@ const USpeaKPágina = () => {
                                     Material de estudo
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    Acesse o material de estudo das aulas do curso
+                                    Acesse o material de estudo do curso
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -45,7 +45,7 @@ const USpeaKPágina = () => {
                                     Áudios das aulas
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    Ouça os áudios das aulas do curso
+                                    Ouça os áudios do curso
                                 </Typography>
                             </CardContent>
                         </Card>

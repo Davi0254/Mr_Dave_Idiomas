@@ -5,18 +5,13 @@ const Módulos = () => {
 
    const modulos = [
       { id: 1, titulo: 'Modulo 1' },
-      { id: 2, titulo: 'Modulo 2' },
-      { id: 3, titulo: 'Modulo 3' },
-      { id: 4, titulo: 'Modulo 4' },
-      { id: 5, titulo: 'Modulo 5' },
-      { id: 6, titulo: 'Modulo 6' },
    ]
 
    return (
       <>
          <Header />
          <div className="flex flex-col items-center mt-10">
-            <img src="/assets/1._Logo_Aquí_Tu_Hablas-removebg-preview.png" alt="USpeaK" width="70" height="70"></img>
+            <img src="/assets/1._Logo_Aquí_Tu_Hablas-removebg-preview.png" alt="USpeaK" width="85" height="85"></img>
             <h1 className="text-center mt-10 text-2xl font-bold">Módulos</h1>
          </div>
          <ul className="flex flex-col mt-10 gap-5 justify-center items-center">

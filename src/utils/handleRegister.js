@@ -9,7 +9,7 @@ const handleRegister = async (e, {registerForm, setRegisterForm, setError, setMe
     }
 
     try {
-        const response = await fetch("https://mr-dave-plataforma.onrender.com/register", {
+        const response = await fetch("http://localhost:3000/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -35,7 +35,7 @@ const handleRegister = async (e, {registerForm, setRegisterForm, setError, setMe
             setError(data.error || "Falha ao fazer login");
         }
     } catch (error) {
-        console.error("Error ao registrar usuário:", error);
+        console.error("Erro ao registrar usuário:", error);
         setError("Erro ao registrar usuário");
     }
 };

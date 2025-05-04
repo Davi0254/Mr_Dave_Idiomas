@@ -27,7 +27,7 @@ const TuHablasPágina = () => {
                                     Material de estudo
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    Acesse o material de estudo
+                                    Acesse o material de estudo do curso
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -45,7 +45,7 @@ const TuHablasPágina = () => {
                                     Áudios das aulas
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    Ouça os áudios
+                                    Ouça os áudios do curso
                                 </Typography>
                             </CardContent>
                         </Card>

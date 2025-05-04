@@ -15,11 +15,15 @@ import M01L01Aula05 from '../pages/USpeaK/apostilas/modulo01/licao01/aula05.jsx'
 import M01L01Aula06 from '../pages/USpeaK/apostilas/modulo01/licao01/aula06.jsx';
 
 import LiçõesAudios from '../pages/USpeaK/audio/licoes.jsx';
-import AulasAudios from '../pages/USpeaK/audio/aulas.jsx';
 import MódulosAudios from '../pages/USpeaK/audio/modulos.jsx';
 import AudiosSotaque from '../pages/USpeaK/audio/sotaque.jsx';
 import M01L01A01AudiosUK from '../pages/USpeaK/audio/modulo01/licao01/aula01/UK.jsx';
 import M01L01A01AudiosUS from '../pages/USpeaK/audio/modulo01/licao01/aula01/US.jsx';
+
+import M01L02 from '../pages/USpeaK/apostilas/modulo01/lição 02.jsx';
+import M01L03 from '../pages/USpeaK/apostilas/modulo01/lição 03.jsx';
+import M01L04 from '../pages/USpeaK/apostilas/modulo01/lição 04.jsx';
+import M01L05 from '../pages/USpeaK/apostilas/modulo01/lição 05.jsx';
 
 export default [
     {
@@ -65,6 +69,23 @@ export default [
         path: 'modulos/1/licoes/1/aulas/6',
         element: <PrivateRoute><M01L01Aula06 /></PrivateRoute>
     },
+    {
+        path: 'modulos/1/licoes/2',
+        element: <PrivateRoute><M01L02 /></PrivateRoute>
+    },
+    {
+        path: 'modulos/1/licoes/3',
+        element: <PrivateRoute><M01L03 /></PrivateRoute>
+    },
+    {
+        path: 'modulos/1/licoes/4',
+        element: <PrivateRoute><M01L04 /></PrivateRoute>
+    },
+    {
+        path: 'modulos/1/licoes/5',
+        element: <PrivateRoute><M01L05 /></PrivateRoute>
+    },
+    
 
     // AUDIOS
 
@@ -77,19 +98,15 @@ export default [
         element: <PrivateRoute><LiçõesAudios /></PrivateRoute>
     },
     {
-        path: 'audios/:id/licoes/:id/aulas',
-        element: <PrivateRoute><AulasAudios /></PrivateRoute>
-    },
-    {
-        path: 'audios/:id/licoes/:id/aulas/:id/sotaque',
+        path: 'audios/:id/licoes/:id/sotaque',
         element: <PrivateRoute>< AudiosSotaque/></PrivateRoute>
     },
     {
-        path: 'audios/1/licoes/1/aulas/1/sotaque/1/UK/1',
+        path: 'audios/1/licoes/1/sotaque/1/UK/1',
         element: <PrivateRoute>< M01L01A01AudiosUK/></PrivateRoute>
     },
     {
-        path: 'audios/1/licoes/1/aulas/1/sotaque/1/US/1',
+        path: 'audios/1/licoes/1/sotaque/1/US/1',
         element: <PrivateRoute>< M01L01A01AudiosUS/></PrivateRoute>
     },
 ];

@@ -14,7 +14,7 @@ export default function LoginPage() {
     const [loginForm, setLoginForm] = useState({ email: "", senha: "" });
     const [error, setError] = useState("");
 
-    const { token,  login } = useAuth();
+    const { token, login } = useAuth();
     const navigate = useNavigate();
 
     const togglePassword = () => {

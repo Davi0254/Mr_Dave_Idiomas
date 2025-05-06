@@ -19,6 +19,7 @@ const Aula04 = () => {
                 <img src="/imagens_apostila_uspeak/Lição 01/Aula04/Aula 04, Lição 01_page-0012.jpg" alt="pagina 12" width={800} />
                 <img src="/imagens_apostila_uspeak/Lição 01/Aula04/Aula 04, Lição 01_page-0013.jpg" alt="pagina 13" width={800} />
                 <img src="/imagens_apostila_uspeak/Lição 01/Aula04/Aula 04, Lição 01_page-0014.jpg" alt="pagina 14" width={800} />
+                <img src="/imagens_apostila_uspeak/Lição 01/Aula04/Aula 04, Lição 01_page-0015.jpg" alt="pagina 15" width={800} />
             </div>
         </>
     )

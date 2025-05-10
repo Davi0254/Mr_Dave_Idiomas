@@ -1,4 +1,4 @@
-import PrivateRoute from '../components/PrivateRoute.jsx';
+import { PrivateRoute, AllowedCourse } from '../components/PrivateRoute.jsx';
 
 import Inicio from '../pages/TuHablas/inicio.jsx';
 import Módulos from '../pages/TuHablas/apostilas/modulos.jsx';
@@ -13,7 +13,7 @@ import M01L01Aula04 from '../pages/TuHablas/apostilas/modulo01/licao01/aula04.js
 export default [
     {
         path: '',
-        element: <PrivateRoute><Inicio /></PrivateRoute>,
+        element: <AllowedCourse><Inicio /></AllowedCourse>,
     },
 
     // APOSTILAS

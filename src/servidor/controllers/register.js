@@ -1,6 +1,6 @@
 import bcrypt from "bcryptjs";
 import pool from "../db.js";
-import { errorHandler } from "../errorHandler.js";
+import { errorHandler } from "../middleware/errorHandler.js";
 
 export const register = async (req, res) => {
     const { nome_completo, email, senha } = req.body;

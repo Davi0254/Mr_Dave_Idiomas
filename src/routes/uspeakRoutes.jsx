@@ -1,4 +1,4 @@
-import PrivateRoute from '../components/PrivateRoute.jsx';
+import { PrivateRoute, AllowedCourse } from '../components/PrivateRoute.jsx';
 
 import Inicio from '../pages/USpeaK/inicio.jsx';
 import Módulos from '../pages/USpeaK/apostilas/modulos.jsx';
@@ -28,7 +28,7 @@ import M01L05 from '../pages/USpeaK/apostilas/modulo01/lição 05.jsx';
 export default [
     {
         path: '',
-        element: <PrivateRoute><Inicio /></PrivateRoute>,
+        element: <AllowedCourse><Inicio /></AllowedCourse>,
     },
 
     // APOSTILAS

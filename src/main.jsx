@@ -8,7 +8,7 @@ import Home from './pages/home.jsx';
 import LoginPage from './loginPage.jsx';
 import RegisterPage from './pages/registerPage.jsx';
 import NotFoundPage from './pages/notFound.jsx';
-import PrivateRoute from './components/PrivateRoute';
+import { PrivateRoute } from './components/PrivateRoute';
 import USpeaKRoutes from './routes/uspeakRoutes.jsx';
 import TuHablasRoutes from './routes/tuhablasRoutes';
 

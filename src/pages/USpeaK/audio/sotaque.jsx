@@ -6,21 +6,11 @@ const Sotaque = () => {
     const { id } = useParams();
 
     const audiosUS = [
-        { id: 1, titulo: 'Audios Aula 1 US' },
-        { id: 2, titulo: 'Audios Aula 2 US' },
-        { id: 3, titulo: 'Audios Aula 3 US' },
-        { id: 4, titulo: 'Audios Aula 4 US' },
-        { id: 5, titulo: 'Audios Aula 5 US' },
-        { id: 6, titulo: 'Audios Aula 6 UK' },
+        { id: 1, titulo: 'Audios Aula 1 US' }
     ]
 
     const audiosUK = [
-        { id: 1, titulo: 'Audios Aula 1 UK' },
-        { id: 2, titulo: 'Audios Aula 2 UK' },
-        { id: 3, titulo: 'Audios Aula 3 UK' },
-        { id: 4, titulo: 'Audios Aula 4 UK' },
-        { id: 5, titulo: 'Audios Aula 5 UK' },
-        { id: 6, titulo: 'Audios Aula 6 UK' },
+        { id: 1, titulo: 'Audios Aula 1 UK' }
     ]
 
     return (

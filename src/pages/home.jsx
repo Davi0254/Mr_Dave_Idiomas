@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Header />
       <div className="flex flex-col items-center gap-10 mt-20">
-        <Link className="flex flex-col items-center cursor-pointer" to='/uspeaK'>
+        <Link className="flex flex-col items-center cursor-pointer" to='/uspeak'>
           <img src="/assets/Logo_USpeaK-removebg-preview.png" alt="USpeaK" width="200" height="200"></img>
           <p className="font-bold">CURSO DE INGLÊS</p>
         </Link>

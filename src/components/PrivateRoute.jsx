@@ -13,7 +13,7 @@ export const PrivateRoute = ({ children }) => {
 export const AllowedCourse = ({ children }) => {
     const { cursos } = useAuth();
     const coursePath = location.pathname;
-   
-    return !cursos?.includes(coursePath) ? alert('operação não permitida') : children
+
+    return cursos?.includes(coursePath) ? children : alert('operação não permitida');
 }
 

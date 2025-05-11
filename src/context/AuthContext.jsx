@@ -21,7 +21,6 @@ export const AuthProvider = ({ children }) => {
             const getCurso = decodedToken?.cursos;
             setCursos(getCurso)
         }
-
         setLoading(false)
     }, []);
 

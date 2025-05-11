@@ -14,6 +14,6 @@ export const AllowedCourse = ({ children }) => {
     const { cursos } = useAuth();
     const coursePath = location.pathname;
 
-    return cursos?.includes(coursePath) ? children : alert('operação não permitida');
+    return cursos?.includes(coursePath) ? children : alert(`recarregue a pagina e acesse o seu curso ${cursos[0].split('/')[1]}`);
 }
 

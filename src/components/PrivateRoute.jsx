@@ -14,6 +14,16 @@ export const AllowedCourse = ({ children }) => {
     const { cursos } = useAuth();
     const coursePath = location.pathname;
 
-    return cursos?.includes(coursePath) ? children : alert(`volte a pagina anterior e recarregue a pagina para acessar o seu curso ${cursos[0].split('/')[1]}`);
+    if (cursos === null) {
+        alert('Por favor, recarregue a página novamente')
+        return <Navigate to='/home' />
+    }
+
+    if (cursos?.includes(coursePath)) {
+        return children
+    } else {
+        alert(`você não tem acesso ao curso ${coursePath.split('/')[1]}`)
+        return <Navigate to='/home' />
+    }
 }
 

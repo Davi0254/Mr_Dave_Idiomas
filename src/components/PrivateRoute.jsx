@@ -11,18 +11,8 @@ export const PrivateRoute = ({ children }) => {
 }
 
 export const AllowedCourse = ({ children }) => {
-    const { cursos, token } = useAuth();
+    const { cursos } = useAuth();
     const coursePath = location.pathname;
-
-    if (loading) {
-        return <div>Loading ...</div>
-    }
-
-    if (token) {
-        return children
-    } else {
-        <Navigate to="/" />
-    }
 
     if (cursos === null) {
         alert('Por favor, recarregue a página novamente')

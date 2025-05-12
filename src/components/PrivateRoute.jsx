@@ -22,7 +22,7 @@ export const AllowedCourse = ({ children }) => {
     if (cursos?.includes(coursePath)) {
         return children
     } else {
-        alert(`você não tem acesso ao curso ${coursePath.split('/')[1]}`)
+        alert(`você não tem acesso a esse curso`)
         return <Navigate to='/home' />
     }
 }

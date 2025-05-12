@@ -25,7 +25,7 @@ export const login = async (req, res) => {
         const isMatch = await bcrypt.compare(senha, senha_hash);
 
         if (!isMatch) {
-            return res.status(400).json({ error: 'Senha insorreta' });
+            return res.status(400).json({ error: 'Senha incorreta' });
         }
 
         // Obter os cursos do aluno

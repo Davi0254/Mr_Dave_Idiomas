@@ -40,8 +40,8 @@ const handleLogin = async (
             setError(data.error || "Falha no login");
         }
     } catch (error) {
-        console.error("Erro no login:", error);
-        setError("Erro no login");
+        console.error("Erro interno do servidor:", error);
+        setError("Erro interno do servidor");
     }
 };
 

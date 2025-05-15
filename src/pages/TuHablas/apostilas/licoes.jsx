@@ -9,6 +9,7 @@ const Lições = () => {
       { id: 2, titulo: 'Lição 2' },
       { id: 3, titulo: 'Lição 3' },
       { id: 4, titulo: 'Lição 4' },
+      { id: 5, titulo: 'Lição 5' },
    ]
 
    return (

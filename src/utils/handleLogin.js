@@ -14,7 +14,7 @@ const handleLogin = async (
 // Remorte server url: https://mr-dave-plataforma.onrender.com
 
     try {
-        const response = await fetch("https://mr-dave-plataforma.onrender.com/login", {
+        const response = await fetch("https://mr-dave-plataforma.onrender.com", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

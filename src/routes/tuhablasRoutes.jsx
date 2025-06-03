@@ -12,6 +12,8 @@ import M01L01Aula04 from '../pages/TuHablas/apostilas/modulo01/licao01/aula04.js
 import M01L01Aula05 from '../pages/TuHablas/apostilas/modulo01/licao01/aula05.jsx';
 import M01L01Aula06 from '../pages/TuHablas/apostilas/modulo01/licao01/aula06.jsx';
 
+import M01L01Aula08Parte01 from '../pages/TuHablas/apostilas/modulo01/licao01/aula 08/parte 01.jsx'
+
 export default [
     {
         path: '',
@@ -51,5 +53,9 @@ export default [
     {
         path: 'modulos/1/licoes/6',
         element: <PrivateRoute><M01L01Aula06 /></PrivateRoute>
+    },
+    {
+        path: 'modulos/1/licoes/8',
+        element: <PrivateRoute><M01L01Aula08Parte01 /></PrivateRoute>
     },
 ];

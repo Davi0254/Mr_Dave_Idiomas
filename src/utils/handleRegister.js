@@ -8,6 +8,7 @@ const handleRegister = async (e, {registerForm, setRegisterForm, setError, setMe
         return;
     }
 
+// https://mr-dave-plataforma.onrender.com/
     try {
         const response = await fetch("https://mr-dave-plataforma.onrender.com/register", {
             method: "POST",

@@ -41,7 +41,6 @@ export const register = async (req, res) => {
 
         await transporter.sendMail({
             from: 'davioliveira8536@gmail.com',
-            // to: 'diomardejesusmartinsoliveira@gmail.com',
             to: email,
             subject: 'Verificar email Mr.Dave Idiomas',
             text: `Clique no link para verificar seu email: ${verifyLink}`

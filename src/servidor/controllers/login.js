@@ -17,8 +17,6 @@ export const login = async (req, res) => {
 
         const result = await pool.query(queryText, [email]);
 
-        console.log(result.rows[0].verificado)
-
         if (result.rowCount === 0) {
             return res.status(400).json({ error: 'Usuário não encontrado' });
         }

@@ -37,7 +37,7 @@ export const register = async (req, res) => {
                 user: 'davioliveira8536@gmail.com',
                 pass: process.env.EMAIL_PASS
             }
-        });
+        }, { debug: true });
 
         await transporter.sendMail({
             from: 'davioliveira8536@gmail.com',
@@ -49,6 +49,7 @@ export const register = async (req, res) => {
         res.status(201).json({ message: 'Por favor, verifique seu email', });
 
     } catch (error) {
+        console.error(error);
         errorHandler(error, res)
     };
 }

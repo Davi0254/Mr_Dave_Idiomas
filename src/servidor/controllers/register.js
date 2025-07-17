@@ -29,7 +29,7 @@ export const register = async (req, res) => {
 
         const token = jwt.sign({ nome_completo, email }, process.env.JWT_SECRET, { expiresIn: '4h' });
 
-        const verifyLink = `https://mr-dave-plataforma.onrender.com//verifyEmail?token=${token}`;
+        const verifyLink = `https://mr-dave-plataforma.onrender.com/verifyEmail?token=${token}`;
 
         const transporter = nodemailer.createTransport({
             service: 'gmail',

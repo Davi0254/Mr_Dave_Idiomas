@@ -10,17 +10,24 @@ export const login = async (req, res) => {
         const { email, senha } = req.body;
 
         const queryText = `
-        SELECT id, email, senha_hash
+        SELECT id, email, senha_hash, verificado
         FROM alunos
         WHERE email = $1
         `;
+
         const result = await pool.query(queryText, [email]);
+
+        console.log(result.rows[0].verificado)
 
         if (result.rowCount === 0) {
             return res.status(400).json({ error: 'Usuário não encontrado' });
         }
 
         const { id, senha_hash } = result.rows[0];
+
+        if (result.rows[0].verificado !== true) {
+            return res.status(403).json({ error: 'email não verificado, por favor verifique sua caixa de entrada' })
+        }
 
         const isMatch = await bcrypt.compare(senha, senha_hash);
 

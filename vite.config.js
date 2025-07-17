@@ -24,7 +24,7 @@ export default defineConfig({
     },
     cors: true,
     allowedHosts: [
-      '6795-177-131-129-145.ngrok-free.app'
+      '40e8-177-131-129-225.ngrok-free.app'
     ],
   },
 })

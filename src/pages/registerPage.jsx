@@ -31,11 +31,11 @@ export default function RegisterPage() {
 
     const navigate = useNavigate()
 
-    useEffect(() => {
-        if (message) {
-            navigate('/');
-        }
-    }, [message]);
+    // useEffect(() => {
+    //     if (message) {
+    //         navigate('/');
+    //     }
+    // }, [message]);
 
     return (
         <Box

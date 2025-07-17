@@ -1,6 +1,8 @@
 import bcrypt from "bcryptjs";
 import pool from "../db.js";
 import { errorHandler } from "../middleware/errorHandler.js";
+import jwt from 'jsonwebtoken';
+import nodemailer from 'nodemailer';
 
 export const register = async (req, res) => {
     const { nome_completo, email, senha } = req.body;
@@ -25,10 +27,27 @@ export const register = async (req, res) => {
 `;
         await pool.query(insertQuery, [nome_completo, email, senha_hash]);
 
-        res.json({
-            message: 'Usuario registrado com sucesso!',
-            redirectTo: '/pages/login'
+        const token = jwt.sign({ nome_completo, email }, process.env.JWT_SECRET, { expiresIn: '4h' });
+
+        const verifyLink = `https://mrdave-idiomas.netlify.app/verifyEmail?token=${token}`;
+
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'davioliveira8536@gmail.com',
+                pass: process.env.EMAIL_PASS
+            }
         });
+
+        await transporter.sendMail({
+            from: 'davioliveira8536@gmail.com',
+            // to: 'diomardejesusmartinsoliveira@gmail.com',
+            to: email,
+            subject: 'Verificar email Mr.Dave Idiomas',
+            text: `Clique no link para verificar seu email: ${verifyLink}`
+        })
+
+        res.status(201).json({ message: 'Por favor, verifique seu email', });
 
     } catch (error) {
         errorHandler(error, res)

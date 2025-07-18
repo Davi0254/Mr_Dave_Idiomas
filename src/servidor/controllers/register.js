@@ -43,7 +43,10 @@ export const register = async (req, res) => {
             from: 'davioliveira8536@gmail.com',
             to: email,
             subject: 'Verificar email Mr.Dave Idiomas',
-            text: `Clique no link para verificar seu email: ${verifyLink}`
+            html: `
+            <img src="/assets/Mr. Dave Logo.png" alt="USpeaK" width="40" height="40">
+            </img><p>Clique no link para verificar seu email: ${verifyLink}</p>
+            `
         })
 
         res.status(201).json({ message: 'Por favor, verifique seu email', });

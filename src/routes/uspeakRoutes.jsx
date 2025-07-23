@@ -24,6 +24,7 @@ import M01L02 from '../pages/USpeaK/apostilas/modulo01/lição 02.jsx';
 import M01L03 from '../pages/USpeaK/apostilas/modulo01/lição 03.jsx';
 import M01L04 from '../pages/USpeaK/apostilas/modulo01/lição 04.jsx';
 import M01L05 from '../pages/USpeaK/apostilas/modulo01/lição 05.jsx';
+import M01L06 from '../pages/USpeaK/apostilas/modulo01/lição 06.jsx';
 
 export default [
     {
@@ -84,6 +85,10 @@ export default [
     {
         path: 'modulos/1/licoes/5',
         element: <PrivateRoute><M01L05 /></PrivateRoute>
+    },
+    {
+        path: 'modulos/1/licoes/6',
+        element: <PrivateRoute><M01L06 /></PrivateRoute>
     },
     
 

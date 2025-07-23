@@ -45,7 +45,7 @@ export default function LoginPage() {
             }}
         >
             <div className='flex flex-col items-center justify-center h-screen gap-4'>
-                <img src="/assets/Mr. Dave Logo.png" alt="USpeaK" width="70" height="70"></img>
+                <img src="/assets/mrdave-logo.png" alt="USpeaK" width="70" height="70"></img>
                 <h1 className='font-bold'>LOGIN</h1>
                 <TextField
                     required

@@ -45,17 +45,16 @@ export const register = async (req, res) => {
             subject: 'Verificar email Mr.Dave Idiomas',
             html: `
             <div>
-            <img src="cid:logo_mrdave" alt="USpeaK" width="40" height="40"></img>
             <p>Clique no link para verificar seu email: ${verifyLink}</p>
             </div>
         `,
-            attachments: [
-                {
-                    filename: 'mrdave-logo.png',
-                    path: '/assets/mrdave-logo.png',
-                    cid: 'logo_mrdave'
-                }
-            ]
+            // attachments: [
+            //     {
+            //         filename: 'mrdave-logo.png',
+            //         path: '/assets/mrdave-logo.png',
+            //         cid: 'logo_mrdave'
+            //     }
+            // ]
         })
 
         res.status(201).json({ message: 'Por favor, verifique seu email', });

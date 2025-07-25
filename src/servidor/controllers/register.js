@@ -34,13 +34,13 @@ export const register = async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'davioliveira8536@gmail.com',
+                user: 'mrdaveidiomas@gmail.com',
                 pass: process.env.EMAIL_PASS
             }
         }, { debug: true });
 
         await transporter.sendMail({
-            from: 'davioliveira8536@gmail.com',
+            from: 'mrdaveidiomas@gmail.com',
             to: email,
             subject: 'Verificar email Mr.Dave Idiomas',
             html: `

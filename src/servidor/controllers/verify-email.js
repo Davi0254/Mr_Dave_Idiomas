@@ -28,7 +28,7 @@ export const verifyEmail = async (req, res) => {
         );
 
         res.status(200).json({
-            message: 'Email verificado com sucesso',
+            message: 'Email verificado com sucesso, você já pode fazer login!',
             redirectTo: '/pages/login'
         });
 

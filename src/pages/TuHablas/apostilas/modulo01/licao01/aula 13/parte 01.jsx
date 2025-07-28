@@ -6,7 +6,7 @@ const Aula13Part1 = () => {
     return (
         <>
             <Header />
-            <div className="bg-stone-200 flex flex-col items-center gap-4">
+            <div className="bg-white flex flex-col items-center gap-4">
                 <img src="/imagens_apostila_tuhablas/Clase13/parte 01/Clase 13, parte 1_page-0001.jpg" alt="pagina 01" width={800} />
                 <div className="flex flex-col">
                     <div className="flex">

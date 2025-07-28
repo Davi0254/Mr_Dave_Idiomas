@@ -48,13 +48,6 @@ export const register = async (req, res) => {
             <p>Clique no link para verificar seu email: ${verifyLink}</p>
             </div>
         `,
-            // attachments: [
-            //     {
-            //         filename: 'mrdave-logo.png',
-            //         path: '/assets/mrdave-logo.png',
-            //         cid: 'logo_mrdave'
-            //     }
-            // ]
         })
 
         res.status(201).json({ message: 'Por favor, verifique seu email', });

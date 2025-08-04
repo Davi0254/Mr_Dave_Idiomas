@@ -13,18 +13,6 @@ const Aula02 = () => {
                 <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0006.jpg" alt="pagina 06" width={800} />
                 <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0007.jpg" alt="pagina 07" width={800} />
                 <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0008.jpg" alt="pagina 08" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0009.jpg" alt="pagina 09" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0010.jpg" alt="pagina 10" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0011.jpg" alt="pagina 11" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0012.jpg" alt="pagina 12" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0013.jpg" alt="pagina 13" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0014.jpg" alt="pagina 14" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0015.jpg" alt="pagina 15" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0016.jpg" alt="pagina 16" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0017.jpg" alt="pagina 17" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0018.jpg" alt="pagina 18" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0019.jpg" alt="pagina 19" width={800} />
-                <img src="/imagens_apostila_uspeak/Lição 01/Aula02/Aula 02, Lição 01_page-0020.jpg" alt="pagina 20" width={800} />
             </div>
         </>
     )

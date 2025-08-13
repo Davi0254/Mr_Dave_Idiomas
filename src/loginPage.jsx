@@ -12,6 +12,7 @@ export default function LoginPage() {
     const [message, setMessage] = useState("");
     const [loginForm, setLoginForm] = useState({ email: "", senha: "" });
     const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const { token, login } = useAuth();
     const navigate = useNavigate();
@@ -28,6 +29,17 @@ export default function LoginPage() {
         }));
     }
 
+    // Função é acionada quando o usuario digita entrar ou pressioana enter
+    const onSubmit = async (e) => {
+        e.preventDefault();
+    // setLoading is set to true
+        setLoading(true);
+        await handleLogin(e, { loginForm, setLoginForm, login, setError, setMessage });
+    // setloading is set to false afain after a response is received from the backend
+        setLoading(false);
+
+    }
+
     useEffect(() => {
         if (token && message) {
             navigate('/home');
@@ -40,9 +52,7 @@ export default function LoginPage() {
             sx={{ '& .MuiTextField-root': { m: 1, width: '25ch' } }}
             noValidate
             autoComplete="off"
-            onSubmit={(e) => {
-                handleLogin(e, { loginForm, setLoginForm, login, setError, setMessage })
-            }}
+            onSubmit={onSubmit}
         >
             <div className='flex flex-col items-center justify-center h-screen gap-4'>
                 <img src="/assets/mrdave-logo.png" alt="USpeaK" width="70" height="70"></img>
@@ -77,6 +87,7 @@ export default function LoginPage() {
                     <Button type='submit' className='w-50' variant="contained">Entrar</Button>
                 </div>
                 <Link to={'/register'} className="text-blue-600 underline">Criar conta</Link>
+                { loading && <p>Por favor, aguarde...</p>}
                 <div>{message || error}</div>
             </div>
         </Box>

@@ -5,6 +5,7 @@ const Módulos = () => {
 
    const modulos = [
       { id: 1, titulo: 'Modulo 1' },
+      { id: 2, titulo: 'Modulo 2' },
    ]
 
    return (

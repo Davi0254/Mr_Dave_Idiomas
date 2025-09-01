@@ -3,7 +3,8 @@ import { PrivateRoute, AllowedCourse } from '../components/PrivateRoute.jsx';
 import Inicio from '../pages/USpeaK/inicio.jsx';
 import Módulos from '../pages/USpeaK/apostilas/modulos.jsx';
 
-import Lições from '../pages/USpeaK/apostilas/licoes.jsx';
+import Lições01 from '../pages/USpeaK/apostilas/modulo01/licoes.jsx';
+import Lições02 from '../pages/USpeaK/apostilas/modulo02/licoes.jsx';
 
 import Aulas from '../pages/USpeaK/apostilas/aulas.jsx';
 
@@ -14,11 +15,15 @@ import M01L01Aula04 from '../pages/USpeaK/apostilas/modulo01/licao01/aula04.jsx'
 import M01L01Aula05 from '../pages/USpeaK/apostilas/modulo01/licao01/aula05.jsx';
 import M01L01Aula06 from '../pages/USpeaK/apostilas/modulo01/licao01/aula06.jsx';
 
+import M02L08 from '../pages/USpeaK/apostilas/modulo02/lição 08.jsx';
+import M02L09 from '../pages/USpeaK/apostilas/modulo02/lição 09.jsx';
+
 import LiçõesAudios from '../pages/USpeaK/audio/licoes.jsx';
 import MódulosAudios from '../pages/USpeaK/audio/modulos.jsx';
 import AudiosSotaque from '../pages/USpeaK/audio/sotaque.jsx';
 import M01L01A01AudiosUK from '../pages/USpeaK/audio/modulo01/licao01/aula01/UK.jsx';
 import M01L01A01AudiosUS from '../pages/USpeaK/audio/modulo01/licao01/aula01/US.jsx';
+
 
 import M01L02 from '../pages/USpeaK/apostilas/modulo01/lição 02.jsx';
 import M01L03 from '../pages/USpeaK/apostilas/modulo01/lição 03.jsx';
@@ -39,8 +44,12 @@ export default [
         element: <PrivateRoute><Módulos /></PrivateRoute>,
     },
     {
-        path: 'modulos/:id/licoes',
-        element: <PrivateRoute><Lições /></PrivateRoute>
+        path: 'modulos/1/licoes',
+        element: <PrivateRoute><Lições01 /></PrivateRoute>
+    },
+    {
+        path: 'modulos/2/licoes',
+        element: <PrivateRoute><Lições02 /></PrivateRoute>
     },
     {
         path: 'modulos/:id/licoes/:id/aulas',
@@ -90,7 +99,14 @@ export default [
         path: 'modulos/1/licoes/6',
         element: <PrivateRoute><M01L06 /></PrivateRoute>
     },
-    
+    {
+        path: 'modulos/2/licoes/8',
+        element: <PrivateRoute><M02L08 /></PrivateRoute>
+    },
+    {
+        path: 'modulos/2/licoes/9',
+        element: <PrivateRoute><M02L09 /></PrivateRoute>
+    },
 
     // AUDIOS
 

@@ -35,7 +35,7 @@ export default function LoginPage() {
     // setLoading is set to true
         setLoading(true);
         await handleLogin(e, { loginForm, setLoginForm, login, setError, setMessage });
-    // setloading is set to false afain after a response is received from the backend
+    // setloading is set to false again after a response is received from the backend
         setLoading(false);
 
     }

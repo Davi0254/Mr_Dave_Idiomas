@@ -1,6 +1,6 @@
 import Header from "../../../../components/Header";
 
-const Lição02 = () => {
+const Lição08 = () => {
     return (
         <>
             <Header />
@@ -25,4 +25,4 @@ const Lição02 = () => {
     )
 }
 
-export default Lição02;
+export default Lição08;

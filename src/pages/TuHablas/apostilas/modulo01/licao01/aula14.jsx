@@ -7,8 +7,8 @@ const Aula14 = () => {
         <>
             <Header />
             <div className="bg-white flex flex-col items-center">
-                <img src="/imagens_apostila_tuhablas/Clase14/Clase 14 - ATH Conv_page-0001.jpg" alt="pagina 01" width={800} />
-                <img src="/imagens_apostila_tuhablas/Clase14/Clase 14 - ATH Conv_page-0002.jpg" alt="pagina 02" width={800} />
+                <img src="/imagens_apostila_tuhablas/modulo01/Clase14/Clase 14 - ATH Conv_page-0001.jpg" alt="pagina 01" width={800} />
+                <img src="/imagens_apostila_tuhablas/modulo01/Clase14/Clase 14 - ATH Conv_page-0002.jpg" alt="pagina 02" width={800} />
                 <div className="flex flex-col">
                     <div className="flex">
                         <AudioIcon width={35} height={35} />
@@ -19,7 +19,7 @@ const Aula14 = () => {
                         Seu navegador não suporta esse áudio
                     </audio>
                 </div>
-                <img src="/imagens_apostila_tuhablas/Clase14/Clase 14 - ATH Conv_page-0003.jpg" alt="pagina 03" width={800} />
+                <img src="/imagens_apostila_tuhablas/modulo01/Clase14/Clase 14 - ATH Conv_page-0003.jpg" alt="pagina 03" width={800} />
                 <div className="flex flex-col">
                     <div className="flex">
                         <AudioIcon width={35} height={35} />
@@ -30,7 +30,7 @@ const Aula14 = () => {
                         Seu navegador não suporta esse áudio
                     </audio>
                 </div>
-                <img src="/imagens_apostila_tuhablas/Clase14/Clase 14 - ATH Conv_page-0004.jpg" alt="pagina 03" width={800} />
+                <img src="/imagens_apostila_tuhablas/modulo01/Clase14/Clase 14 - ATH Conv_page-0004.jpg" alt="pagina 03" width={800} />
                 <div className="flex flex-col">
                     <div className="flex">
                         <AudioIcon width={35} height={35} />
@@ -41,7 +41,7 @@ const Aula14 = () => {
                         Seu navegador não suporta esse áudio
                     </audio>
                 </div>
-                <img src="/imagens_apostila_tuhablas/Clase14/Clase 14 - ATH Conv_page-0005.jpg" alt="pagina 03" width={800} />
+                <img src="/imagens_apostila_tuhablas/modulo01/Clase14/Clase 14 - ATH Conv_page-0005.jpg" alt="pagina 03" width={800} />
             </div>
         </>
     )

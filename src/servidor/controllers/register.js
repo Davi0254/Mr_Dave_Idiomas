@@ -30,6 +30,7 @@ export const register = async (req, res) => {
         const token = jwt.sign({ nome_completo, email }, process.env.JWT_SECRET, { expiresIn: '4h' });
 
         const verifyLink = `https://mr-dave-plataforma.onrender.com/verifyEmail?token=${token}`;
+        console.log(verifyLink)
 
         const transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -38,6 +39,7 @@ export const register = async (req, res) => {
                 pass: process.env.EMAIL_PASS
             }
         }, { debug: true });
+        console.log(transporter)
 
         await transporter.sendMail({
             from: 'mrdaveidiomas@gmail.com',

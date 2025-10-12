@@ -1,5 +1,5 @@
 import { PrivateRoute, AllowedCourse } from '../components/PrivateRoute.jsx';
-import Inicio from '../pages/TuHablas/inicio.jsx';
+import Inicio from '../pages/tuhablas/inicio.jsx';
 import Modulos from '../pages/tuhablas/modulos.jsx';
 import AulasConv from '../pages/tuhablas/aulasConversacao.jsx';
 import AulasReg from '../pages/tuhablas/aulasRegular.jsx/'

@@ -2,7 +2,6 @@ import { Link, useParams } from "react-router-dom";
 import Header from "../../../../components/Header";
 
 const Lições = () => {
-   const { id } = useParams();
 
    const lições = [
       { id: 2, titulo: 'Lição 2' },

@@ -1,41 +1,4 @@
-// import { Link, useParams } from 'react-router-dom';
-// import Header from '../../components/Header';
-
-// const Clases = () => {
-//     const { moduloId } = useParams();
-
-//     const aulas = [
-//         { id: '1', titulo: 'Aula 1' },
-//         { id: '2', titulo: 'Aula 2' },
-//         { id: '3', titulo: 'Aula 3' },
-//         { id: '4', titulo: 'Aula 4' },
-//         { id: '5', titulo: 'Aula 5' },
-//         { id: '6', titulo: 'Aula 6' },
-//     ];
-
-//     return (
-//         <>
-//             <Header />
-//             <h1>Módulo {moduloId}</h1>
-//             <ul>
-//                 {aulas.map(l => (
-//                     <li key={l.id}>
-//                         <Link to={`/modulos/${moduloId}/aulas/${l.id}`} className='underline text-blue-600'>
-//                             {l.titulo}
-//                         </Link>
-//                     </li>
-//                 ))}
-//             </ul>
-//             <Link to='/modulos' className='text-purple-600'>Voltar</Link>
-//         </>
-//     );
-// };
-
-// export default Clases;
-
-
-
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 
 const Aulas = () => {
@@ -50,6 +13,11 @@ const Aulas = () => {
         { id: 8, titulo: 'Aula 8' },
         { id: 13, titulo: 'Aula 13' },
         { id: 14, titulo: 'Aula 14' },
+        { id: 15, titulo: 'Aula 15' },
+        { id: 16, titulo: 'Aula 16' },
+        { id: 17, titulo: 'Aula 17' },
+        { id: 18, titulo: 'Aula 18' },
+        { id: 19, titulo: 'Aula 19' },
     ]
 
     return (

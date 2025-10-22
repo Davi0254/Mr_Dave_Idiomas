@@ -13,8 +13,8 @@ const Lições = () => {
     ]
 
     const liçõesM02 = [
+        { id: 8, titulo: 'Lição 8' },
         { id: 9, titulo: 'Lição 9' },
-        { id: 2, titulo: 'Lição 10' },
     ]
 
     return (
@@ -34,7 +34,7 @@ const Lições = () => {
                         </Link>
                         {liçõesM01.map((lição) => (
                             <li key={lição.id}>
-                                <Link to={`${lição.id}/aulapage`}>
+                                <Link to={`${lição.id}/licaopage`}>
                                     <h2 className="text-blue-600 underline">{lição.titulo}</h2>
                                 </Link>
                             </li>
@@ -42,12 +42,9 @@ const Lições = () => {
                     </>
                 ) : (
                     <>
-                        {/* <Link to={`2/aulas`}>
-                            <h2 className="text-blue-600 underline">Lição 1</h2>
-                        </Link> */}
                         {liçõesM02.map((lição) => (
                             <li key={lição.id}>
-                                <Link to={`${lição.id}/aulapage`}>
+                                <Link to={`${lição.id}/licaopage`}>
                                     <h2 className="text-blue-600 underline">{lição.titulo}</h2>
                                 </Link>
                             </li>

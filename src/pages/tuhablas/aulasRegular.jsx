@@ -5,7 +5,7 @@ const Aulas = () => {
 
     const aulas = [
         { id: 0, titulo: 'Aula 00' },
-        { id: 1, titulo: 'Aula 1' },
+        // { id: 1, titulo: 'Aula 1' },
     ]
 
     return (

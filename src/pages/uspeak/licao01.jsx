@@ -2,7 +2,8 @@ import { useParams } from 'react-router-dom';
 import Header from '../../components/Header';
 
 const AulaPageL01 = () => {
-  const { aulaId } = useParams();
+  const { aulaID } = useParams();
+  console.log(aulaID)
 
   // Se você souber quantas páginas a aula tem, coloque aqui.
   // Exemplo: 20 páginas
@@ -11,7 +12,7 @@ const AulaPageL01 = () => {
   // Gera lista de nomes com padding "0001"
   const pages = Array.from({ length: pageCount }, (_, i) => {
     const idx = i + 1; // '0001', '0002', ...
-    return `/imagens_apostila_tuhablas/conversacao/${aulaId}/Clase-${aulaId}_page-${idx}.jpg`;
+    return `/imagens_apostila_uspeak/licao01/aula${aulaID}/aula-${aulaID}_page-${idx}.jpg`;
   });
 
   return (

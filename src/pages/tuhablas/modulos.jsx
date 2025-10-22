@@ -18,7 +18,6 @@ const Modulos = () => {
                 <ul className='flex flex-col'>
                     {modulos.map(m => (
                         <li key={m.id}>
-                            {/* caminho absoluto é mais explicito */}
                             <Link to={`${m.titulo}/aulas`} className='text-blue-600'>
                                 {m.titulo}
                             </Link>

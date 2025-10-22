@@ -22,15 +22,19 @@ export default [
         element: <PrivateRoute><Licoes /></PrivateRoute>
     },
     {
-        path: 'uspeakmodulos/:moduloID/licoes/:licaoID/aulapage',
+        path: 'uspeakmodulos/:moduloID/licoes/:licaoID/licaopage',
         element: <PrivateRoute><AulaPage /></PrivateRoute>
     },
     {
         path: 'uspeakmodulos/:moduloID/licoes/1/aulas',
+        element: <PrivateRoute><Aulas /></PrivateRoute>
+    },
+    {
+        path: 'uspeakmodulos/:moduloID/licoes/1/aulas/:aulaID/aulapage',
         element: <PrivateRoute><AulaPageL01 /></PrivateRoute>
     },
     {
-        path: 'uspeakmodulos/:moduloID/licoes/:licaoID/aulas/:aulaId/aulapage',
+        path: 'uspeakmodulos/:moduloID/licoes/:licaoID/aulas/:aulaID/aulapage',
         element: <PrivateRoute><AulaPage /></PrivateRoute>
     },
 ];

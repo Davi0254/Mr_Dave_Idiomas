@@ -10,24 +10,21 @@ const Aulas = () => {
         { id: 4, titulo: 'Aula 4' },
         { id: 5, titulo: 'Aula 5' },
         { id: 6, titulo: 'Aula 6' },
-        { id: 8, titulo: 'Aula 8' },
-        { id: 13, titulo: 'Aula 13' },
-        { id: 14, titulo: 'Aula 14' },
     ]
 
     return (
         <>
             <Header />
             <div className="flex flex-col items-center mt-10">
-                <img src="/assets/1._Logo_Aquí_Tu_Hablas-removebg-preview.png" alt="USpeaK" width="85" height="85"></img>
+                <img src="/assets/Logo_USpeaK-removebg-preview.png" alt="USpeaK" width="85" height="85"></img>
                 <h1 className="text-center mt-10 text-2xl font-bold">
-                    Conversacao
+                    aulas
                 </h1>
             </div>
             <ul className="flex flex-col mt-10 gap-5 justify-center items-center">
                 {aulas.map((aula) => (
                     <li key={aula.id}>
-                        <Link to={`${aula.id}`}>
+                        <Link to={`${aula.id}/aulapage`}>
                             <h2 className="text-blue-600 underline">{aula.titulo}</h2>
                         </Link>
                     </li>

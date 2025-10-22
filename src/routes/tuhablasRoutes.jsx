@@ -5,7 +5,6 @@ import AulasConv from '../pages/tuhablas/aulasConversacao.jsx';
 import AulasReg from '../pages/tuhablas/aulasRegular.jsx/'
 import AulaPageConv from '../pages/tuhablas/aulaPageConv.jsx';
 import AulaPageReg from '../pages/tuhablas/aulaPageReg.jsx';
-// import NotFound from '../pages/NotFound.jsx';
 
 
 export default [
@@ -35,9 +34,4 @@ export default [
         path: 'modulos/regular/aulas/:aulaId',
         element: <PrivateRoute><AulaPageReg /></PrivateRoute>
     },
-  
-    // {
-    //     path: '*',
-    //     element: <NotFound />
-    // }
 ];

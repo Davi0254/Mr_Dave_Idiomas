@@ -18,6 +18,7 @@ const Aulas = () => {
         { id: 17, titulo: 'Aula 17' },
         { id: 18, titulo: 'Aula 18' },
         { id: 19, titulo: 'Aula 19' },
+        { id: 20, titulo: 'Aula 20' },
     ]
 
     return (

@@ -1,37 +1,29 @@
 # Mr_Dave_Idiomas
 
-Mr_Dave_Idiomas é uma plataforma web full stack desenvolvida para permitir que os alunos da escola Mr Dave Idiomas acessem materiais de estudo relacionados ao seu curso. Os alunos podem fazer login e acessar páginas com apostilas e áudios dos cursos, com acesso restrito ao curso em que estão matriculados.
+Mr_Dave_Idiomas is a full-stack web platform developed to allow students at Mr Dave Idiomas to access study materials related to their courses. Students can log in and access pages containing course books and audio materials, with access restricted to the course in which they are enrolled.
 
-# 🚀 Tecnologias Utilizadas
+# 🚀 Technologies Used
 
-Front-end:
+**Front-end:**
 
-HTML
+* HTML
+* CSS
+* JavaScript
+* React
+* Tailwind CSS
 
-CSS
+**Back-end:**
 
-JavaScript
+* Node.js
+* Express
 
-React
+**Database:**
 
-Tailwind CSS
+* PostgreSQL
 
-Back-end:
+# 📌 Features
 
-Node.js
-
-Express
-
-Banco de Dados:
-
-PostgreSQL
-
-# 📌 Funcionalidades
-
-Autenticação de usuários (login e logout)
-
-Controle de acesso com permissões baseadas no curso matriculado
-
-Página de apostilas e áudios organizados por curso
-
-Design responsivo e moderno com Tailwind CSS
+* User authentication (login and logout)
+* Access control with permissions based on the enrolled course
+* Course-specific pages for organized books and audio materials
+* Modern and responsive design using Tailwind CSS
